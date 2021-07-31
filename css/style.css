@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
 .card{
-    margin: 10px;
     font-weight: bold;
+    margin: 20px;
+}
+footer>div>div>div>a{
+    color: black;
+    font-weight: bold;
+}
+footer>div>div>div>a:hover{
+    color: black;
+}
+footer>div>a{
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+}
+footer>div>a:hover{
+    color: black;
 }

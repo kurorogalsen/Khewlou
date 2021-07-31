@@ -25,12 +25,37 @@
 </head>
 <body>
     <header class="container">
-        <nav class="uk-navbar-container uk-background-secondary uk-light" uk-navbar>
-            <div class="uk-navbar-left">
+        
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Parent</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <nav class="uk-navbar-container uk-background-secondary uk-light row" uk-navbar>
+            <button class="uk-button uk-button-default uk-margin-small-left uk-hidden@l" type="button" uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button>
+
+            <div class="uk-navbar-left uk-visible@l">
                 <a class="uk-navbar-item uk-logo" href="#">Xeweul Store</a>
 
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Electronics</a></li>
+                    <li class="uk-active"><a href="#">Accueil</a></li>
                     <li>
                         <a href="#">Clothing</a>
                         <div class="uk-navbar-dropdown">
@@ -41,40 +66,155 @@
                         </div>
                     </li>
                     <li><a href="#">Jewelery</a></li>
+                    <li><a href="#">Electronics</a></li>
                 </ul>
             </div>
             
             <div class="uk-navbar-right">
                 <div class="uk-navbar-item">
-                    <form action="javascript:void(0)">
-                        <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher un produit">
+                    <form class=" uk-visible@s" action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Rechercher un produit">
                         <button class="uk-button uk-button-default">Rechercher</button>
                     </form>
+                    <div class="row uk-padding-small">
+                        <span uk-icon="icon: bag; ratio: 1.5"></span>
+                        <span class="uk-text-large">(2)</span>                        
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="container column">
-        <div class="col-3 card">
-            <div class="uk-card uk-card-default uk-background-secondary uk-light">
-                <div class="uk-card-media-top">
-                    <img src="images/light.jpg" alt="">
+        <div class="container" uk-scrollspy="cls:uk-animation-fade">
+    
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale; autoplay: true; autoplay-interval: 4000; ratio: 7:2; pause-on-hover: false">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="images/1.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small">
+                            <button class="uk-button uk-button-secondary uk-button-large">CATALOGUE HOMME</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/2.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small">
+                            <button class="uk-button uk-button-secondary uk-button-large">CATALOGUE FEMME</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/3.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small">
+                            <button class="uk-button uk-button-secondary uk-button-large">NOS BIJOUX</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/4.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small">
+                            <button class="uk-button uk-button-secondary uk-button-large">NOS APPAREILS ELECTRONIQUES</button>
+                        </div>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+    
+        </div>
+
+        <div class="col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6 uk-text-center uk-margin-large-bottom uk-margin-large-top">
+            <h1 uk-scrollspy="cls:uk-animation-fade; delay: 500">RETROUVEZ SUR XEWEUL STORE VOS ARTICLES PRÉFÉRÉS À BAS PRIX !</h1>
+            <hr class="uk-divider-icon">
+            <p uk-scrollspy="cls:uk-animation-fade; delay: 700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat libero obcaecati, rerum ad, provident officiis quod consectetur illo maxime sint ipsa error quidem facilis? Necessitatibus aspernatur iste voluptate nemo.
+                Incidunt, cupiditate unde doloremque iusto amet culpa nostrum ratione. Iure optio dicta unde velit, placeat eveniet sapiente deleniti architecto maiores nostrum qui voluptates consequatur quibusdam pariatur ducimus alias fugit a.
+                Doloribus voluptatum veniam rerum ut pariatur, commodi, voluptas blanditiis nulla laudantium est dolores, cumque nam consequuntur! Cum animi sint quae eos ut ullam voluptatem aut. Illum fuga omnis qui nostrum.
+            </p>
+        </div>
+
+        <div class="container row uk-margin-small-bottom">
+
+            <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body"><div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-expand" uk-leader="fill: -">BAG</div>
+                        <div>$20.90</div>
+                    </div>
+                    </div>
                 </div>
-                <div class="uk-card-body"><div class="uk-grid-small" uk-grid>
-                    <div class="uk-width-expand" uk-leader="fill: -">Lorem ipsum dolor sit amet</div>
-                    <div>$20.90</div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 800">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body"><div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-expand" uk-leader="fill: -">BAG</div>
+                        <div>$20.90</div>
+                    </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 800">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body"><div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-expand" uk-leader="fill: -">BAG</div>
+                        <div>$20.90</div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="container column uk-background-secondary uk-margin-large-top uk-margin-small-bottom">
+            <h1 class="uk-light uk-margin-medium-top" uk-scrollspy="cls:uk-animation-fade; delay: 400">VISITEZ NOTRE SHOWROOM !</h1>
+            <iframe class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6" uk-scrollspy="cls:uk-animation-fade; delay: 600" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18570.606868995772!2d-17.439983872779514!3d14.679370113479855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1627743997342!5m2!1sen!2ssn" width="800" height="200" style="border:0; padding: 25px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </main>
 
-    <footer class="container">
+    <footer class="container column">
+        <div class="row row-between .uk-margin-small-bottom col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 400">
+                <div>Xeweul Store</div>
+                <div>Tel: <a href="tel:+221770000000">+221 77 000 00 00</a></div>
+                <div>Mail: <a href="mailto:contact@xeweul.sn">contact@xeweul.sn</a></div>
+                <div>Adresse: 88 rue du Flo, Dakar, Sénégal</div>
+            </div>
+            <hr class="uk-divider-vertical uk-visible@s">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div><a href="">Le store</a></div>
+                <div><a href="">Politique</a></div>
+                <div><a href="">FAQ</a></div>
+            </div>
+            <hr class="uk-divider-vertical">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="twitter"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="facebook"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="whatsapp"></a>
+                </div>
+            </div>
+        </div>
 
+        <div class="row uk-margin-small-top">Ce site a été conçu et déployé par la <a href=""> @Galsen Digital Agency</a> 🚀</div>
+        <a style="position: fixed; bottom: 20px; right: 20px; background-color: black; padding: 10px 5px;" href="#" uk-totop uk-scroll></a>
     </footer>
+
+
 
     <script src="uikit-3.7.1/js/uikit.js"></script>
     <script src="./js/script.js"></script>
+    <script src="uikit-3.7.1/js/uikit-icons.js"></script>
 </body>
 </html>
