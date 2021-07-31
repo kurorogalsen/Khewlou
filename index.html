@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="og:image" content="images/logo.jpeg">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="og:locale" content="sn_SN">
+    <meta property="og:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="twitter:image" content="images/logo.jpeg">
+    <meta property="twitter:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="twitter:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="uikit-3.7.1/css/uikit.css">
+
+    <title>Xeweul Store</title>
 </head>
 <body>
-    
+    <header class="container">
+        <nav class="uk-navbar-container uk-background-secondary uk-light" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Xeweul Store</a>
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Electronics</a></li>
+                    <li>
+                        <a href="#">Clothing</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Men's clothing</a></li>
+                                <li><a href="#">Women's clothing</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Jewelery</a></li>
+                </ul>
+            </div>
+            
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <form action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher un produit">
+                        <button class="uk-button uk-button-default">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container column">
+        <div class="col-3 card">
+            <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                <div class="uk-card-media-top">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="uk-card-body"><div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-expand" uk-leader="fill: -">Lorem ipsum dolor sit amet</div>
+                    <div>$20.90</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+
+    </footer>
+
+    <script src="uikit-3.7.1/js/uikit.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

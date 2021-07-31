@@ -2753,7 +2753,7 @@ select.uk-form-width-xsmall {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 .uk-card-default .uk-card-title {
-  color: #333;
+  /* color: #333; */
 }
 .uk-card-default.uk-card-hover:hover {
   background-color: #fff;
@@ -5204,7 +5204,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
 }
 /*
  * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
