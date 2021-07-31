@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
 
-    <meta property="og:image" content="images/3.jpg">
+    <meta property="og:image" content="../images/3.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
     <meta property="og:locale" content="sn_SN">
     <meta property="og:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
 
-    <meta property="twitter:image" content="images/3.jpg">
+    <meta property="twitter:image" content="../images/3.jpg">
     <meta property="twitter:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
     <meta property="twitter:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="uikit-3.7.1/css/uikit.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../uikit-3.7.1/css/uikit.css">
 
     <title>Xeweul Store</title>
 </head>
@@ -29,19 +29,19 @@
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#">Accueil</a></li>
+                    <li class="uk-active"><a href="../index.html">Accueil</a></li>
                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent">
-                        <a href="./catalogue/index.html">Clothes</a>
+                        <a href="#">Clothes</a>
                         <ul class="uk-nav-sub">
-                            <li><a href="./catalogue/index.html">Men</a></li>
-                            <li><a href="./catalogue/index.html">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
                         </ul>
                     </li>
                     <li class="uk-nav-divider"></li>
-                    <li><a href="./catalogue/index.html">Jewelery</a></li>
+                    <li><a href="#">Jewelery</a></li>
                     <li class="uk-nav-divider"></li>
-                    <li><a href="./catalogue/index.html">Electronics</a></li>
+                    <li><a href="#">Electronics</a></li>
                 </ul>
 
             </div>
@@ -51,21 +51,21 @@
             <button class="uk-button uk-button-default uk-margin-small-left uk-hidden@l" type="button" uk-toggle="target: #offcanvas-nav-primary"> <span uk-icon="icon: menu; ratio: 1.2"></span></button>
 
             <div class="uk-navbar-left uk-visible@l">
-                <a class="uk-navbar-item uk-logo" href="#">Xeweul Store</a>
+                <a class="uk-navbar-item uk-logo" href="../index.html">Xeweul Store</a>
 
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Accueil</a></li>
-                    <li>
-                        <a href="./catalogue/index.html">Clothing</a>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="uk-active">
+                        <a href="#">Clothing</a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="./catalogue/index.html">Men's clothing</a></li>
-                                <li><a href="./catalogue/index.html">Women's clothing</a></li>
+                                <li><a href="#">Men's clothing</a></li>
+                                <li><a href="#">Women's clothing</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="./catalogue/index.html">Jewelery</a></li>
-                    <li><a href="./catalogue/index.html">Electronics</a></li>
+                    <li><a href="#">Jewelery</a></li>
+                    <li><a href="#">Electronics</a></li>
                 </ul>
             </div>
             
@@ -111,48 +111,7 @@
     </header>
 
     <main class="container column">
-        <div class="container" uk-scrollspy="cls:uk-animation-fade">    
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale; autoplay: true; autoplay-interval: 4000; ratio: 11:4; pause-on-hover: false">
-                <ul class="uk-slideshow-items">
-                    <li>
-                        <img src="images/1.jpg" alt="" uk-cover>
-                        <div class="uk-position-center uk-position-small">
-                            <button class="uk-button uk-button-secondary uk-button-large">CATALOGUE HOMME</button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/2.jpg" alt="" uk-cover>
-                        <div class="uk-position-center uk-position-small">
-                            <button class="uk-button uk-button-secondary uk-button-large">CATALOGUE FEMME</button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/3.jpg" alt="" uk-cover>
-                        <div class="uk-position-center uk-position-small">
-                            <button class="uk-button uk-button-secondary uk-button-large">NOS BIJOUX</button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/4.jpg" alt="" uk-cover>
-                        <div class="uk-position-center uk-position-small">
-                            <button class="uk-button uk-button-secondary uk-button-large">NOS APPAREILS ELECTRONIQUES</button>
-                        </div>
-                    </li>
-                </ul>
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            </div>    
-        </div>
-
-        <div class="col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6 uk-text-center uk-margin-large-bottom uk-margin-large-top">
-            <h1 uk-scrollspy="cls:uk-animation-fade; delay: 500">RETROUVEZ SUR XEWEUL STORE VOS ARTICLES PRÉFÉRÉS À BAS PRIX !</h1>
-            <hr class="uk-divider-icon">
-            <p uk-scrollspy="cls:uk-animation-fade; delay: 700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat libero obcaecati, rerum ad, provident officiis quod consectetur illo maxime sint ipsa error quidem facilis? Necessitatibus aspernatur iste voluptate nemo.
-                Incidunt, cupiditate unde doloremque iusto amet culpa nostrum ratione. Iure optio dicta unde velit, placeat eveniet sapiente deleniti architecto maiores nostrum qui voluptates consequatur quibusdam pariatur ducimus alias fugit a.
-            </p>
-        </div>
-
+        <h1 class="uk-margin-small">Catalogue: All</h1>
         <div class="container row uk-margin-small-bottom">
 
             <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 600">
@@ -241,8 +200,8 @@
 
 
 
-    <script src="uikit-3.7.1/js/uikit.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="uikit-3.7.1/js/uikit-icons.js"></script>
+    <script src="../uikit-3.7.1/js/uikit.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../uikit-3.7.1/js/uikit-icons.js"></script>
 </body>
 </html>
