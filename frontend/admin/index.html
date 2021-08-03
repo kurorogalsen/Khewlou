@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="og:image" content="../images/3.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="og:locale" content="sn_SN">
+    <meta property="og:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="twitter:image" content="../images/3.jpg">
+    <meta property="twitter:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="twitter:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../uikit-3.7.1/css/uikit.css">
+
+    <title>Xeweul Store</title>
+</head>
+<body>
+    <header class="container">        
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="../index.html">Accueil</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a href="#">Clothes</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Jewelery</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Electronics</a></li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <nav class="uk-navbar-container uk-background-secondary uk-light row" uk-navbar uk-sticky="bottom: #gda">
+            <button class="uk-button uk-button-default uk-margin-small-left uk-hidden@l" type="button" uk-toggle="target: #offcanvas-nav-primary"> <span uk-icon="icon: menu; ratio: 1.2"></span></button>
+
+            <div class="uk-navbar-left uk-visible@l">
+                <a class="uk-navbar-item uk-logo" href="../index.html">Xeweul Store</a>
+
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="uk-active">
+                        <a href="#">Clothing</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Men's clothing</a></li>
+                                <li><a href="#">Women's clothing</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Jewelery</a></li>
+                    <li><a href="#">Electronics</a></li>
+                </ul>
+            </div>
+            
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item" style="padding: 0;">
+                    <form class=" uk-visible@s" action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Rechercher un produit">
+                        <button class="uk-button uk-button-default">Rechercher</button>
+                    </form>
+                    <div class="row uk-padding-small" uk-toggle="target: #panier" style="cursor: pointer;">
+                        <span uk-icon="icon: bag; ratio: 1.5"></span>
+                        <span class="uk-text-large">(7)</span>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="panier" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <h3>VOTRE PANIER</h3>
+                <li></li>
+                <div class="row-between uk-margin-small">
+                    <div>Bag x2 - +</div>
+                    <div>10000F</div>
+                </div>
+                <div class="uk-heading-divider"></div>
+                <div class="row-between uk-margin-small">
+                    <div>Tshirt x5 - +</div>
+                    <div>12500F</div>
+                </div>
+                <div class="uk-heading-divider"></div>
+                <div id="total-panier" class="row-between uk-margin-small">
+                    <div>Total</div>
+                    <div>22500F</div>
+                </div>
+                
+                <button class="uk-button uk-button-primary uk-margin-small">Payer</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container column">
+        <h1 class="uk-margin-small uk-margin-medium-top col-11 col-md-9">Bienvenue Moustapha!</h1>
+        <p class="col-11 col-md-9">Cette plateforme admin vous permettra de supprimer/ajouter/modifier/visualiser les articles de votre catalogue</p>
+
+        <form class=" uk-margin-medium-bottom">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Ajouter un article</legend>
+        
+                <div class="uk-margin">
+                    <input  id="article-title" class="uk-input" type="text" placeholder="Nom article">
+                </div>
+                <div class="uk-margin">
+                    <select  id="article-categorie" class="uk-select">
+                        <option>Bijoux</option>
+                        <option>Electronique</option>
+                        <option>Homme</option>
+                        <option>Femme</option>
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <input  id="article-prix" class="uk-input" type="number" placeholder="Prix" step="500" min="500" max="100000000">
+                </div>
+                <div class="uk-margin">
+                    <select  id="article-devise" class="uk-select">
+                        <option>FCFA</option>
+                        <option>EURO</option>
+                        <option>DOLLAR</option>
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <div uk-form-custom>
+                        <input type="file">
+                        <button class="uk-button uk-button-default" type="button" tabindex="-1">Ajouter une image</button>
+                    </div>
+                </div>
+
+                <button id="article-submit" class="uk-button uk-button-success">Ajouter</button>
+        
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer class="container column">
+        <div class="row row-between .uk-margin-small-bottom col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 400">
+                <div>Xeweul Store</div>
+                <div>Tel: <a href="tel:+221770000000">+221 77 000 00 00</a></div>
+                <div>Mail: <a href="mailto:contact@xeweul.sn">contact@xeweul.sn</a></div>
+                <div>Adresse: 88 rue du Flo, Dakar, Sénégal</div>
+            </div>
+            <hr class="uk-divider-vertical uk-visible@s">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div><a href="">Le store</a></div>
+                <div><a href="">Politique</a></div>
+                <div><a href="">FAQ</a></div>
+            </div>
+            <hr class="uk-divider-vertical">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="twitter"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="facebook"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row uk-margin-small-top">Ce site a été conçu et déployé par la <a href="" id="gda"> @Galsen Digital Agency</a> 🚀</div>
+        <a style="position: fixed; bottom: 20px; right: 20px; background-color: black; padding: 10px 5px;" href="#" uk-totop uk-scroll></a>
+    </footer>
+
+
+
+    <script src="../uikit-3.7.1/js/uikit.js"></script>
+    <script src="../js/script-post.js"></script>
+    <script src="../uikit-3.7.1/js/uikit-icons.js"></script>
+</body>
+</html>

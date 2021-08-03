@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="og:image" content="../images/3.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="og:locale" content="sn_SN">
+    <meta property="og:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <meta property="twitter:image" content="../images/3.jpg">
+    <meta property="twitter:description" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+    <meta property="twitter:title" content="Trouvez tout ce dont vous avez besoin sur Xeweul store !">
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../uikit-3.7.1/css/uikit.css">
+
+    <title>Xeweul Store</title>
+</head>
+<body>
+    <header class="container">        
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="../index.html">Accueil</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a href="#">Clothes</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Jewelery</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Electronics</a></li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <nav class="uk-navbar-container uk-background-secondary uk-light row" uk-navbar uk-sticky="bottom: #gda">
+            <button class="uk-button uk-button-default uk-margin-small-left uk-hidden@l" type="button" uk-toggle="target: #offcanvas-nav-primary"> <span uk-icon="icon: menu; ratio: 1.2"></span></button>
+
+            <div class="uk-navbar-left uk-visible@l">
+                <a class="uk-navbar-item uk-logo" href="../index.html">Xeweul Store</a>
+
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="uk-active">
+                        <a href="#">Clothing</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Men's clothing</a></li>
+                                <li><a href="#">Women's clothing</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Jewelery</a></li>
+                    <li><a href="#">Electronics</a></li>
+                </ul>
+            </div>
+            
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item" style="padding: 0;">
+                    <form class=" uk-visible@s" action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Rechercher un produit">
+                        <button class="uk-button uk-button-default">Rechercher</button>
+                    </form>
+                    <div class="row uk-padding-small" uk-toggle="target: #panier" style="cursor: pointer;">
+                        <span uk-icon="icon: bag; ratio: 1.5"></span>
+                        <span class="uk-text-large">(7)</span>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="panier" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <h3>VOTRE PANIER</h3>
+                <li></li>
+                <div class="row-between uk-margin-small">
+                    <div>Bag x2 - +</div>
+                    <div>10000F</div>
+                </div>
+                <div class="uk-heading-divider"></div>
+                <div class="row-between uk-margin-small">
+                    <div>Tshirt x5 - +</div>
+                    <div>12500F</div>
+                </div>
+                <div class="uk-heading-divider"></div>
+                <div id="total-panier" class="row-between uk-margin-small">
+                    <div>Total</div>
+                    <div>22500F</div>
+                </div>
+                
+                <button class="uk-button uk-button-primary uk-margin-small">Payer</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container column">
+        <h1 class="uk-margin-small">Catalogue: All</h1>
+        <div class="container row uk-margin-small-bottom">
+
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://m.media-amazon.com/images/I/61dR6Py28XL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <div class="row-between">
+                            <div>Right light</div>
+                            <div>15000F</div>
+                        </div>
+                    </div>
+                </div>
+                <span class="add-panier">Ajouter</span>
+            </div>
+
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 800">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://www.bonoboplanet.com/dw/image/v2/BCHM_PRD/on/demandware.static/-/Sites-Bonobo_master/default/dw6e87dbab/t-shirt-eco-responsable-rose-homme-dc-36125271281223203.jpg?sw=417&sh=556" alt="">
+                    </div>
+                    <div class="uk-card-body">                        
+                        <div class="row-between">
+                            <div>Tshirt</div>
+                            <div>2500F</div>
+                        </div>
+                    </div>
+                </div>
+                <span class="add-panier">Ajouter</span>
+            </div>
+
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2 card" uk-scrollspy="cls:uk-animation-fade; delay: 800">
+                <div class="uk-card uk-card-default uk-background-secondary uk-light">
+                    <div class="uk-card-media-top">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <div class="row-between">
+                            <div>BAG</div>
+                            <div>5000F</div>
+                        </div>
+                    </div>
+                </div>
+                <span class="add-panier">Ajouter</span>
+            </div>
+        </div>
+
+        <div class="container column uk-background-secondary uk-margin-large-top uk-margin-small-bottom">
+            <h1 class="uk-light uk-margin-medium-top" uk-scrollspy="cls:uk-animation-fade; delay: 400">VISITEZ NOTRE SHOWROOM !</h1>
+            <iframe class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6" uk-scrollspy="cls:uk-animation-fade; delay: 600" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18570.606868995772!2d-17.439983872779514!3d14.679370113479855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1627743997342!5m2!1sen!2ssn" width="800" height="200" style="border:0; padding: 15px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer class="container column">
+        <div class="row row-between .uk-margin-small-bottom col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 400">
+                <div>Xeweul Store</div>
+                <div>Tel: <a href="tel:+221770000000">+221 77 000 00 00</a></div>
+                <div>Mail: <a href="mailto:contact@xeweul.sn">contact@xeweul.sn</a></div>
+                <div>Adresse: 88 rue du Flo, Dakar, Sénégal</div>
+            </div>
+            <hr class="uk-divider-vertical uk-visible@s">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div><a href="">Le store</a></div>
+                <div><a href="">Politique</a></div>
+                <div><a href="">FAQ</a></div>
+            </div>
+            <hr class="uk-divider-vertical">
+            <div class="column" style="padding: 20px;" uk-scrollspy="cls:uk-animation-fade; delay: 600">
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="twitter"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="facebook"></a>
+                </div>
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small" uk-icon="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row uk-margin-small-top">Ce site a été conçu et déployé par la <a href="" id="gda"> @Galsen Digital Agency</a> 🚀</div>
+        <a style="position: fixed; bottom: 20px; right: 20px; background-color: black; padding: 10px 5px;" href="#" uk-totop uk-scroll></a>
+    </footer>
+
+
+
+    <script src="../uikit-3.7.1/js/uikit.js"></script>
+    <script src="../js/script-get.js"></script>
+    <script src="../uikit-3.7.1/js/uikit-icons.js"></script>
+</body>
+</html>
