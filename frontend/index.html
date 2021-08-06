@@ -75,39 +75,15 @@
                         <input class="uk-input uk-form-width-medium" type="text" placeholder="Rechercher un produit">
                         <button class="uk-button uk-button-default">Rechercher</button>
                     </form>
-                    <div class="row uk-padding-small" uk-toggle="target: #panier" style="cursor: pointer;">
-                        <span uk-icon="icon: bag; ratio: 1.5"></span>
-                        <span class="uk-text-large">(7)</span>                        
+                    <div class="row uk-padding-small" style="cursor: pointer;">
+                        <form id="panier" action="panier/panier.php" method="POST">
+                            <input hidden type="text">
+                            <input class="uk-button-primary" type="submit" value="PANIER">
+                        </form>
                     </div>
                 </div>
             </div>
         </nav>
-
-        <div id="panier" uk-offcanvas="flip: true; overlay: true">
-            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-                <h3>VOTRE PANIER</h3>
-                <li></li>
-                <div class="row-between uk-margin-small">
-                    <div>Bag x2 - +</div>
-                    <div>10000F</div>
-                </div>
-                <div class="uk-heading-divider"></div>
-                <div class="row-between uk-margin-small">
-                    <div>Tshirt x5 - +</div>
-                    <div>12500F</div>
-                </div>
-                <div class="uk-heading-divider"></div>
-                <div id="total-panier" class="row-between uk-margin-small">
-                    <div>Total</div>
-                    <div>22500F</div>
-                </div>
-                
-                <button class="uk-button uk-button-primary uk-margin-small">Payer</button>
-            </div>
-        </div>
     </header>
 
     <main class="container column">
